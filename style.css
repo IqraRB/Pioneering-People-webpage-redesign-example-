@@ -1,0 +1,381 @@
+body {
+  margin:0;
+  background-color: #f4e0c5;
+}
+
+/* navigation css styling starts */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height:107px;
+    width:100%;
+    background-color: black;
+    padding:10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header div a {
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 50px;
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: #ff8177;
+    background-image: linear-gradient(to bottom,white 0%, bisque 10%, #ffb199 50%, #ff8177 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    /* -moz-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    cursor: pointer;
+}
+
+header nav {
+    height: 32px;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 15px;
+    background-image: linear-gradient(to bottom,white 0%, bisque 10%, #ffb199 80%, #ff8177 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.topnav a:hover {
+    color:bisque;
+    cursor: pointer;
+  }
+
+/* Main container styling  */
+
+.main {background-color: #141414;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 80vh;
+    background-color:#f4e0c5;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    /* color:grey; */
+    line-height: 30px;
+    padding-bottom: 5rem;
+}
+
+.main__content {
+  color: #fff;
+}
+
+.main__content h1 {
+  font-size: 2.5rem;
+  color: black;
+  line-height: 50px;
+  padding-left: 30px;
+}
+
+.main__content h2{
+  color: black;
+  font-size: 1.2rem;
+  /* font-weight: px; */
+  /* line-height: 20px; */
+  padding-left: 30px;
+}
+
+.main__content p {
+  color: #141414;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+.main__btn {
+  font-size: 0.8rem;
+  background-color: black;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:#ffb199;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  padding-top: 30px;
+  height: 600px;
+  width: 300px;
+}
+
+/* Destinantion Container Styling */
+
+/* .destination {
+  /* background:lightgray; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+} */
+
+/* .destination h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  /* background-color: #ff8177;
+  background-image: linear-gradient(to bottom,white 0%, bisque 10%, #ffb199 50%, #ff8177 100%); */
+  /* background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+  /* margin-top: 2rem; */
+  padding-top: 2rem;
+  font-size: 3rem;
+} */
+
+/* .destination__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+/* .destination__card {
+  margin: 1rem;
+  height: 350px;
+  width: 250px;
+  /* border-radius: 4px; */
+  background-image: 
+  /*linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ), */
+    url('/images/verified.svg');
+  background-size: cover;
+  position: relative;
+  color: #fff;
+} */
+
+/* .destination__card:before {
+  opacity: 0.2;
+} */
+
+/* .destination__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url('/images/pic4.jpg');
+} */
+
+/* .services__card h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px; */
+}
+
+/* .destination__card h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 400px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+} */
+
+/* .destination__card button {
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  position: absolute;
+  top: 440px;
+  left: 30px;
+  font-size: 1rem; */
+  /* font-size: 0.8rem;
+  background-color: black;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none; */
+}
+
+/* .destination__card button:hover {
+  cursor: pointer;
+} */
+
+/* .destination__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+} */
+
+/* Footer styling */
+
+div footer {
+    background-color: black;
+}
+
+footer nav {
+    background-color: black;
+    height: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-flex;
+    width: 100%;
+    justify-content:flex-end; 
+    align-items:center;
+    padding: 20px 0px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.bottomnav a:hover {
+    color:bisque;
+}
+
+div footer section{
+    background-color: black;
+}
+hr{
+    color: bisque;
+    margin: 0%;
+}
+
+div footer section{
+    background-color: black;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* Social Media Icon's styling */
+
+.fa {
+    font-size: 10px;
+    width: 20px; 
+    text-align: center;
+    text-decoration: none;
+    margin: 2.5px;
+    display:inline-flex;
+    justify-content: center;
+    color: bisque;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  /* .fa-facebook {
+    background: white;
+    color: black;
+  } */
+  
+  /* .fa-twitter {
+    background: white;
+    color: black;
+  } */
+  
+  /* .fa-google {
+    background: white;
+    color: black;
+  } */
+  
+  /* .fa-linkedin {
+    background: white;
+    color: black;
+  } */
+  
+  
+  /* .fa-instagram {
+    background: white;
+    color: black;
+  } */
+
+h6{
+    background-color: black;
+    /* justify-content: flex-end; */
+    color: #ffe4c4;
+    font-size: 0.8em;
+    margin: 5px;
+    /* padding-right: 20px; */
+    padding-left: 55rem;
+}
